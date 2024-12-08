@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio e Criador de Hábitos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bem-vindo ao seu Portfólio de Cartas</h1>
+
+    <h2>Adicionar Novo Hábito</h2>
+    <form id="habit-form">
+        <label for="habit-name">Nome do Hábito:</label>
+        <input type="text" id="habit-name" placeholder="Digite o nome do hábito" required>
+        <button type="submit">Adicionar Hábito</button>
+    </form>
+
+    <div id="habits-container">
+        <h2>Seus Hábitos</h2>
+        <!-- Os hábitos serão inseridos aqui dinamicamente -->
+    </div>
+
+    <div class="gallery">
+        <div class="card holographic">
+            <img src="images/carta_teste.jpg" alt="Carta Teste">
+        </div>
+        <div class="card holographic">
+            <img src="images/card2.png" alt="Carta Teste">
+        </div>
+        <div class="card holographic">
+            <img src="images/card3.png" alt="Carta Teste">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.main-screen {
+    width: 100%;
+    text-align: center;
+}
+
+#portfolio-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-portfolio {
+    width: 150px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: slideIn 1s ease-out;
+}
+
+/* Estilos para os hábitos */
+.habit-progress {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.day {
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.day.completed {
+    background-color: green;
+}
+
+.habit-timer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.reward-button {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reward-button:hover {
+    background-color: #218838;
+}
+
+.card-reward {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-reward img {
+    width: 200px;
+    height: auto;
+}
+
+.card-reward.reveal img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background: #333;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.reward-button {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 10px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    background: #333;
+    color: #4caf50;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.reward-button:hover {
+    background: #4caf50;
+    color: #fff;
+}
+
